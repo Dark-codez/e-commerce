@@ -68,7 +68,7 @@ const Single_Product = (prop) => {
                                 <button onClick={() => {
                                     add_to_cart({
                                         "title": data.title,
-                                        "price": data.price,
+                                        "price": data.price * quantity,
                                         "product_id": data.id,
                                         "quantity": quantity,
                                         "category": data.category, 
