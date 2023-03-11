@@ -9,8 +9,8 @@ const Footer = () => {
                 <li>
                     <h1>Contact us</h1>
                     <p>Whatsapp: 08080655081</p>
-                    <p>Facebook: Rebecca John</p>
-                    <p>Email: Rebecca9@gmail.com</p>
+                    <p>Facebook: Emeka Azu</p>
+                    <p>Email: azuchukwuemeka9@gmail.com</p>
                 </li>
                 <li>
                     <h1>Links</h1>
