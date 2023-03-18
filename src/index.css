@@ -355,3 +355,46 @@ h2:not(.price){
     left: 0px;
   }
 }
+form.login{
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgb(65, 117, 115);
+  box-shadow: 1px 1px 5px rgba(0,0,0,.2),
+              1px 1px 5px rgba(255,255,255,.2);
+}
+form.login h2{
+  font-size: 2.4rem;
+  color: rgb(188, 255, 222);
+}
+form.login label{
+  display: block;
+  color: #fff;
+  font-size: 1.3rem;
+}
+form.login input{
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: none;
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,.2),
+              inset 1px 1px 5px rgba(255,255,255,.2);
+  font-size: 1.2rem;
+}
+form.login button{
+  display: block;
+  margin-top: 1em;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 15px 0;
+  background:rgb(14, 50, 59);
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  transition: all .1s;
+}
+form.login button:active{
+  transform: scale(.9);
+}

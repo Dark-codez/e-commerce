@@ -1,16 +1,19 @@
 import { useQuery } from "@tanstack/react-query";
 import { useContext } from "react";
-import { BrowserRouter, Link, Router } from "react-router-dom";
+import { useAuthState } from "react-firebase-hooks/auth";
+import { BrowserRouter, Link, Navigate, Router, useNavigate } from "react-router-dom";
 import { get_product_category } from "../api_endpoints/get_requests/Endpoints";
 import { CartContext } from "../contexts/CartContext";
+import { auth } from "../utils/firebase";
 
 const Navbar = () => {
     const { data, status} = useQuery({
         queryKey: ['get_product_category'],
         queryFn: get_product_category
     })
+    const navigate = useNavigate();
     const { cart, toggle_cart } = useContext(CartContext);
-
+    const [user, loading] = useAuthState(auth);
     const links = [
                     "phone",
                     "laptop",
@@ -59,7 +62,13 @@ const Navbar = () => {
                     <i className = "fa fa-shopping-cart"></i> 
                     <span className="cart_count">{cart.length}</span>
                 </li>
+                {user && <li onClick={() => {
+                        auth.signOut();
+                        navigate("/");
+                    }
+                } style = {{cursor: "pointer"}}><h2>Logout</h2></li>}
             </ul>
+            {user && <h3>Welcome {user?.email}</h3>}
         </nav>
      );
 }
