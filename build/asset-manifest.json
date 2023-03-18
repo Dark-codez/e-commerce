@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/static/css/main.760be60a.css",
+    "main.js": "/static/js/main.bee148d3.js",
+    "static/media/Online Shopping_Isometric.svg": "/static/media/Online Shopping_Isometric.45c950848c56aa5ab98bc74b016cdd2a.svg",
+    "index.html": "/index.html",
+    "main.760be60a.css.map": "/static/css/main.760be60a.css.map",
+    "main.bee148d3.js.map": "/static/js/main.bee148d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.760be60a.css",
+    "static/js/main.bee148d3.js"
+  ]
+}
