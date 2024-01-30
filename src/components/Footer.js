@@ -31,7 +31,7 @@ const Footer = () => {
                         />
                 </li>
                 <h1 style = {{textDecorationLine: "none", textDecorationStyle: "none"}}> 
-                    &copy;2023 All Rights Reserved 
+                    &copy;_____ all Rights Reserved 
                 </h1>
             </ul>
         </footer>
